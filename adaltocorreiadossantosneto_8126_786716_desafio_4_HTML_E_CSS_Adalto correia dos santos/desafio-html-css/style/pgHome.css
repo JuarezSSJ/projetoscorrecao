@@ -1,0 +1,27 @@
+ main .imagemPrincipal img{
+    width: 70%;
+}
+
+main p{
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+@media (max-width: 768px){
+    main p{
+        font-size: 14px;
+    }
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b3571;
+    color: #fff;
+    padding: 10px 40px;
+}
+
+
