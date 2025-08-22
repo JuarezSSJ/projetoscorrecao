@@ -1,0 +1,119 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  padding: 20px 0px;
+}
+
+.main__videoWrapper {
+  background: var(--black);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  max-width: 960px;
+}
+
+.main__text--1 {
+  text-align: center;
+  margin: 12px 0px 0px 0px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 130%;
+  padding: 0px 30px;
+  font-weight: 600;
+}
+
+.main__carsCardTable {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px 0px 20px;
+  overflow: hidden;
+}
+
+.main__carsCardTable tbody {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.main__carsCardTable tr {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+}
+
+.main__button.button--compare {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--white);
+  text-align: center;
+  padding: 10px 38px;
+  border-radius: 10px;
+  background: var(--blue-2);
+  border: solid 3px transparent;
+  outline-width: 0px;
+  margin: 20px 0px;
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+.main__button.button--compare:hover {
+  background: transparent;
+  border: solid 3px var(--blue-2);
+  color: var(--blue-2);
+  transform: scale(1.02);
+}
+
+.main__button.button--compare ion-icon {
+  visibility: hidden;
+  width: 0px;
+  margin-right: 0px;
+  transform: translateX(-80px);
+  opacity: 0;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+  padding: 0px;
+}
+
+.main__button.button--compare:hover ion-icon {
+  transform: translateX(0px);
+  visibility: visible;
+  opacity: 1;
+  width: 30px;
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 720px) {
+  .main__carsCardTable {
+    padding-bottom: 20px;
+  }
+  .main__carsCardTable tr {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

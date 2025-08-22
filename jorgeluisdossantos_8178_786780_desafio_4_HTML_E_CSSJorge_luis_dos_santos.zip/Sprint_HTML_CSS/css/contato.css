@@ -1,0 +1,144 @@
+.content {
+    display: flex;
+}
+
+.content-formulario,
+.content-img {
+    flex: 1;
+}
+
+.content-img img {
+    width: 600px;
+    min-width: 300px;
+}
+
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.content-formulario form input {
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    padding: 0.8rem;
+    max-width: 250px;
+}
+
+.content-formulario form input:focus {
+    outline: none;
+    border: 1px solid blue;
+}
+
+select {
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    padding: 0.5rem;
+    max-width: 250px;
+}
+
+select:focus,
+textarea:focus {
+    outline: none;
+    border: 1px solid #1A357C;
+}
+
+select,
+textarea {
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    padding: 0.8rem;
+    max-width: 250px;
+}
+
+textarea {
+    resize: none;
+    max-width: 250px;
+    max-height: 300px;
+    padding: 0.5rem;
+    border-radius: 12px;
+}
+
+.form-content-btn {
+    max-width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.Cards-button button,
+.form-btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    background-color: #0348f7;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+
+@media(max-width: 700px){
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-formulario form input {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .content-img {
+        max-width: 400px;
+    }
+    .content-icons-text{
+        display: none; 
+    }
+    .content-formulario form input {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-formulario {
+        display: flex;
+        width: 100%;
+    }
+
+    .content-formulario form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    select,
+    textarea {
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .mensagem {
+        align-self: flex-start;
+        text-align: left;
+        width: 100%;
+        margin-left: 5px;
+    }
+}
+@media(max-width: 430px){
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+}
