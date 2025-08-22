@@ -1,0 +1,367 @@
+/* Reset básico e configuração do modelo de caixa */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Cores definidas no desafio */
+.cor-primaria {
+    background-color: #1b357e;
+}
+
+.cor-secundaria {
+    background-color: #1351d8;
+}
+
+.btn-enviar {
+    padding: 10px 20px;
+    border: none;
+    background-color: #1351d8;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+    transform: scale(1.1);
+    background-color: #1b357e;
+}
+
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+    .container-header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #1b357e;
+    color: white;
+    padding: 10px 0;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main - Página Inicial */
+.lancamento-principal {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.lancamento-principal img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.lancamento-principal p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: #1b357e;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para a seção de links sociais no rodapé */
+.social-links {
+    display: flex;
+    align-items: center;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links img {
+    height: 24px;
+    width: auto;
+    transition: opacity 0.3s;
+}
+
+.social-links a:hover img {
+    opacity: 0.7;
+}
+
+.container-footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/*Alinhamento do vídeo promocional no Centro*/
+.video-promocional {
+    text-align: center;
+    padding: 30px 0;
+}
+
+/*Container Principal para os 3 veiculos*/
+.vehicle-selection {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/*Estilo de cada coluna*/
+.vehicle-option {
+    flex-basis: 300px;
+    text-align: center;
+}
+
+.vehicle-option img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+/*Container para os detalhes*/
+.option-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.option-details label {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.option-details input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+.info-icon {
+    width: 16px;
+    height: 16px;
+}
+
+/*Estilo para o botão comparar*/
+.compare-button {
+    display: block;
+    margin: 20px auto 50px auto;
+    padding: 12px 30px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: #1351d8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.compare-button:hover {
+    background-color: #1b357e;
+}
+
+/*Ajuste do padding do header*/
+header {
+    background-color: #1b357e;
+    color: white;
+    padding: 5px 20px;
+}
+
+header img {
+    height: 50px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.container-header>a {
+    line-height: 0;
+}
+
+/* Estilo Página de Contato*/
+
+/*Container principal para as duas colunas*/
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    gap: 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/*Coluna da imagem*/
+.contact-image-colum {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-image-colum img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Coluna do formulário*/
+.contact-form-column {
+    flex: 3;
+    min-width: 300px;
+}
+
+.contact-form-column h3 {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/*Estilo dos campos do formulário*/
+.contact-form-column form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.8em;
+    color: #666;
+    font-weight: bold;
+}
+
+.contact-form-column form input,
+.contact-form-column form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+.submit-button:hover {
+    background-color: #1b357e;
+    transform: scale(1.05);
+}
+
+.contact-form-column form textarea {
+    height: 200px;
+    resize: none;
+}
+
+#mensagem{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    resize: none;
+    height: 150px;
+}
+
+.submit-button {
+    padding: 12px 30px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: #1351d8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.product-description {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.product-description p {
+    font-size: 1.1em;
+    color: #444;
+    line-height: 1.6;
+}
+
+.video-promocional iframe {
+    width: 90%;
+    max-width: 1100px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+}
