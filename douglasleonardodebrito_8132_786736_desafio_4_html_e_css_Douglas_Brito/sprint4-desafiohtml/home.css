@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ text-decoration: none;
+ }
+ 
+ 
+  body {
+   margin: 0;
+   padding: 0;
+   font-family: Arial, sans-serif;
+   background-color: #fff;
+ 
+  } 
+ 
+  header {    
+  
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid gray;
+  }
+  .nav {
+   margin-bottom: 20px;
+   align-items: center;
+  }
+  .nav ul a {
+   margin: 0 15px;
+   text-decoration: none;
+  color: #ffffff;
+   font-weight: bold;
+  }
+  .img {
+   max-width: 100%;
+  }
+ 
+  .logo {
+   height: 50px;
+  }
+  nav ul {
+ list-style: none;
+ display: flex;
+ gap: 20px;
+  }
+ 
+  nav ul li a {
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+   align-items: center;
+  }
+ 
+  main {
+  flex: 1;
+  padding: 20px;
+  }
+
+ .lancamento {
+  text-align: center;
+ } 
+  
+ .lancamento img {
+ width: 91%; 
+  }
+
+ 
+  footer {
+  margin-top: 20px;
+  background-color: #131791;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+      }
+ 
+ .redes-sociais {
+ list-style: none;
+ display: flex;
+ justify-content: center;
+ gap: 15px;
+ padding: 10px 0;
+ 
+ }  
+ .redes-sociais li a {
+ color: #ffffff;
+ text-decoration: none;
+ 
+ }  
+  @media (max-width: 600px) {
+  nav ul {
+ 
+   flex-direction: column;
+   align-items: center;
+  }
+  main .imagemPrincipal img{
+    width: 70%;
+  }
+  main p{
+    margin: 20px;
+    max-width: 600px;
+    padding: 0 20px;
+  }
+  }
+  
+  @media (max-width: 768px){
+    main p{
+      font-size: 14px;
+    }
+  }
+  
+@media (max-width: 768px){
+
+  header{
+      flex-direction: column;
+      padding: 10px 20px;
+  }
+
+  header nav ul{
+      gap: 15px;
+      margin-top: 15px;
+  }
+
+  footer{
+      flex-direction: row;
+      gap: 15px;
+      padding: 20px;
+      text-align: center;
+  }
+
+  .redes-sociais p{
+      display: none;
+  }
+
+  .redes-sociais img,
+  .logo_footer img{
+      height: 25px;
+  }
+
+  .copyright p{
+      font-size: 8px;
+      line-height: 1.4;
+      max-width: 88%;
+      margin: 0 auto;
+  }
+}

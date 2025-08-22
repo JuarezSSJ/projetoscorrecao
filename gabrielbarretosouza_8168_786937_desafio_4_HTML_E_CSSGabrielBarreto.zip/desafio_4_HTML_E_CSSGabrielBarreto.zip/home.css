@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    margin: 0px;
+    padding: 0;
+}
+
+.fordinho {
+    height: 60px;
+    justify-content: space-between;
+}
+
+.todo-mundo-junto {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: black;
+
+}
+.todo-mundo-junto a{
+    color: blue;
+}
+ul {
+position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.carro {
+    display: flex;
+    justify-content: center;
+    width: 1351px;
+    height: 800px;
+
+}
+
+.carro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ford {
+    text-align: center;
+    left: 50%;
+    margin: 30px auto 40px auto;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+}
+
+.redes-sociais {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.footer-bar {
+    background-color: #1d3d7d;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px 5px;
+    position: absolute;
+    bottom: auto;
+    width: 100%;
+}
+
+.redes-sociais span {
+    font-size: 14px;
+
+}
+
+.logo-footer {
+    height: 40px;
+}
+
+.footer-bar img {
+    height: 30px;
+}
+
+.copy{
+    left: 50%
+}
+
+
+

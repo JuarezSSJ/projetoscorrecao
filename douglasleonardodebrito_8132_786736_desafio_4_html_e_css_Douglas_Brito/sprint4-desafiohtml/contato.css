@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   text-decoration: none;
+   }
+   
+   
+    body {
+     margin: 0;
+     padding: 0;
+     font-family: Arial, sans-serif;
+     background-color: #fff;
+   
+    } 
+   
+    header {    
+    
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid gray;
+    }
+    .nav {
+     margin-bottom: 20px;
+     align-items: center;
+    }
+    .nav ul a {
+     margin: 0 15px;
+     text-decoration: none;
+    color: #ffffff;
+     font-weight: bold;
+    }
+    .img {
+     max-width: 100%;
+     height: auto;
+     margin-bottom: 20px;
+    }
+   
+    .logo {
+     height: 50px;
+    }
+    nav ul {
+   list-style: none;
+   display: flex;
+   gap: 20px;
+    }
+   
+    nav ul li a {
+     color: white;
+     text-decoration: none;
+     font-weight: bold;
+     align-items: center;
+    }
+   
+    main {
+    flex: 1;
+    padding: 20px;
+   text-align: center;
+    }
+   .lancamento {
+     text-align: center;
+   } 
+    
+   .lancamento img {
+   width: 85%;
+   margin: 20px 0;
+   
+    }
+   
+    footer {
+    margin-top: 20px;
+    background-color: #131791;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+        }
+   
+   .redes-sociais {
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   gap: 15px;
+   padding: 10px 0;
+   
+   }  
+   .redes-sociais li a {
+   color: #ffffff;
+   text-decoration: none;
+   
+   }  
+    @media (max-width: 600px) {
+    nav ul {
+   
+     flex-direction: column;
+     align-items: center;
+    }
+    
+    }
+  
+
+
+
+
+.contatoPagina {
+    display: flex;
+    max-width: 900px;
+    margin: 30px auto;
+    gap: 40px;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.contato-imagem{
+    flex: 1;
+    min-width: 0;
+}
+
+.contato-imagem img {
+    width: 100%;
+    height: auto;
+}
+
+.formularioContainer{
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.formulario h3{
+    color: #000;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+}
+
+.contato {
+    position: relative;
+}
+
+.contato input,
+.contato select,
+.contato textarea{
+    width: 100%;
+    padding: 7px 15px;
+    border: 1px solid #ddd;
+    border-radius: 11px;
+    font-size: 0.95rem;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.contato input:focus,
+.contato select:focus,
+.contato textarea:focus{
+    border-color: #00274C;
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 0 0 2px rgb(0, 39, 76, 0.1);
+}
+
+.contato select {
+    appearance: none;
+    -webkit-appearance: none;
+    color: #555;
+}
+
+.contato textarea {
+    resize: vertical;
+    min-height: 10px;
+}
+.submitBotao{
+    background-color: #1351d8;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.5s ease;  
+    justify-content: center;
+    align-items: center;
+
+}
+.submitBotao:hover{
+    background-color: #00274C;
+    color: white;
+    transform: translate(-2px);
+}
+@media (max-width: 768px){
+    .contatoPagina{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .formularioContainer{
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    header nav ul{
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    footer{
+        flex-direction: row;
+        gap: 15px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .redes-sociais p{
+        display: none;
+    }
+
+    .redes-sociais img,
+    .logo_footer img{
+        height: 25px;
+    }
+
+    .copyright p{
+        font-size: 8px;
+        line-height: 1.4;
+        max-width: 88%;
+        margin: 0 auto;
+    }
+}
